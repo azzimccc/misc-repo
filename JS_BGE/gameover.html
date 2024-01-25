@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Game Over</h2>
+        <p id="demo"></p>
+        <script>
+        // Get the value of the "name" parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+
+        // Display the value on the screen
+        document.getElementById("demo").innerHTML = "Score : " + score + "!";
+        </script>
+        <a href="index.html"><label>Play Again</label></a>
+    </body>
+</html>
